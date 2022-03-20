@@ -5,6 +5,9 @@ class HomeUseCase {
   final HomeRepository homeRepository;
   HomeUseCase(this.homeRepository);
 
+  ///*
+  ///Method to consult all characters
+  ///*
   Future<List<Character>> invoke() async{
     return await homeRepository.getCharacters();
   }

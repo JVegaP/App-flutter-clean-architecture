@@ -7,6 +7,9 @@ import 'package:rick_morty/domain/repositories/home/home_repository.dart';
 
 class HomeDataSource extends HomeRepository {
 
+  ///*
+  ///Call to the api that consumes all the characters
+  ///*
   @override
   Future<List<Character>> getCharacters() async{
     try {
@@ -21,24 +24,5 @@ class HomeDataSource extends HomeRepository {
       throw Exception('Ocurrio un error.');
     }
   }
-
-  //@override
-  /*Future<BookDetail> getBookDetail(String isbn) async{
-    try {
-      final response = await http.get(Uri.parse('https://openlibrary.org/api/books?bibkeys=ISBN:$isbn&jscmd=data&format=json'))
-          .timeout(const Duration(seconds: 10));
-      if(response.statusCode==200) {
-        if(response.body.isNotEmpty){
-          return BookDetailObjectModel.fromJson(jsonDecode(response.body)).bookDetail;
-        }else{
-          throw Exception('Ocurrio un error.');
-        }
-      } else {
-        throw Exception('Fue imposible adquirir esta url.');
-      }
-    } on SocketException catch (_) {
-      throw Exception('Ocurrio un error.');
-    }
-  }*/
 
 }

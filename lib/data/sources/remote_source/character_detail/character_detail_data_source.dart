@@ -7,6 +7,10 @@ import 'package:rick_morty/domain/repositories/character_detail/character_detail
 
 class CharacterDetailDataSource extends CharacterDetailRepository {
 
+  ///*
+  ///Call to the api that consumes a particular character
+  ///[id] this id the character
+  ///*
   @override
   Future<CharacterDetail> getCharacterDetail(int id) async{
     try {

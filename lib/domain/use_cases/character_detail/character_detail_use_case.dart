@@ -6,6 +6,10 @@ class CharacterDetailUseCase {
   final CharacterDetailRepository characterDetailRepository;
   CharacterDetailUseCase(this.characterDetailRepository);
 
+  ///*
+  ///Method to consult the detail of a character
+  ///[id] this id the character
+  ///*
  Future<CharacterDetail> invoke(int id) async{
     return await characterDetailRepository.getCharacterDetail(id);
   }
