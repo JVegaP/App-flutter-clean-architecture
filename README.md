@@ -11,3 +11,7 @@ en esta se implementan las siguientes dependencias:
   animate_do: ^2.0.0
   shimmer: ^2.0.0
   flutter_staggered_animations: ^1.0.0
+
+Se adjunta un directorio llamado apk, dentro se encuentra un
+archivo RickMorty.apk con la aplicación desarrollada para
+poderla ejecutar en cualquier dispositivo android.
